@@ -5,6 +5,7 @@ let indicator = false;
 
 // Event Listner for button
 button.addEventListener("click", () => {
+	
   button.style.backgroundColor = "#096DD9";
   
 // change the icons
@@ -20,13 +21,17 @@ button.addEventListener("click", () => {
   
 // After 2 secods change the styles
   setTimeout(() => {
+// button styling
 	button.style.border="1px solid #D9D9D9"
     button.style.backgroundColor = "#F5F5F5";
 	button.disabled ="true"
+// input styling
 	input.disabled ="true"
 	input.style.border="1px solid #D9D9D9"
 	input.style.backgroundColor = "#F5F5F5";
 	input.classList.add("place")
+
+// icons styling
     let iconSearch = document.querySelector(".fa-solid");
     iconSearch.style.display = "block";
 	iconSearch.style.color="#D9D9D9"

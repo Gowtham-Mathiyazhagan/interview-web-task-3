@@ -80,7 +80,9 @@ button:active {
 :is(button,.input-text).cursor{
 	cursor: not-allowed;
 }
-
+.input-text.place{
+	color:var(--placeholder) ;
+}
 .input-text.place::placeholder{
 	color:var(--placeholder) ;
 }
