@@ -27,6 +27,9 @@
   /* input styling */
   --input-padding: 20px;
   --input-font-size: 14px;
+
+  /* placeholder color */
+  --placeholder : #D9D9D9;
 }
 
 .container-search {
@@ -36,6 +39,7 @@
   gap: var(--gap-between);
   margin: var(--container-margin);
   padding: var(--container-padding);
+  cursor: not-allowed;
 }
 .input-text {
   width: 100%;
@@ -45,6 +49,7 @@
   font-size: var(--input-font-size);
   outline: none;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 .input-text:focus {
   box-shadow: 0 0 0px 1px var(--hover-btn-bg-color);
@@ -58,11 +63,12 @@ button {
   border-radius: var(--btn-radius) !important;
   color: #ffffff;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 button:hover {
   background-color: var(--hover-btn-bg-color);
 }
-button:visited {
+button:active {
   background-color: var(--active-btn-bg-color);
 }
 .spinner-border {
@@ -70,6 +76,11 @@ button:visited {
   width: 16px !important; 
   font-size: 8px;
 }
-.fa-solid{
-/* display:none ; */
+
+:is(button,.input-text).cursor{
+	cursor: not-allowed;
+}
+
+.input-text.place::placeholder{
+	color:var(--placeholder) ;
 }
