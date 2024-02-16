@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* root level css variables */
+:root {
+  /* Longhand Atomic CSS */
+
+  /* container styling */
+  --container-margin: 20px auto;
+  --container-padding: 0 40px;
+
+  /* button styling */
+  --primary-btn-bg-color: #1890ff;
+  --hover-btn-bg-color: #40a9ff;
+  /* --active-btn-bg-color: #096dd9; */
+  --active-btn-bg-color: #096DD9;
+  --btn-padding: 8px 12px;
+  --btn-radius: 2px;
+  --gap-between: 5px;
+  --font-size: 7px;
+
+  /* input styling */
+  --input-padding: 20px;
+  --input-font-size: 14px;
+}
+
+.container-search {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-between);
+  margin: var(--container-margin);
+  padding: var(--container-padding);
+}
+.input-text {
+  width: 100%;
+  border: 1px solid var(--primary-btn-bg-color);
+  border-radius: var(--btn-radius);
+  padding-left: var(--input-padding);
+  font-size: var(--input-font-size);
+  outline: none;
+  transition: all 0.2s linear;
+}
+.input-text:focus {
+  box-shadow: 0 0 0px 1px var(--hover-btn-bg-color);
+}
+button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: var(--primary-btn-bg-color);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius) !important;
+  color: #ffffff;
+  transition: all 0.2s linear;
+}
+button:hover {
+  background-color: var(--hover-btn-bg-color);
+}
+button:visited {
+  background-color: var(--active-btn-bg-color);
+}
+.spinner-border {
+  height: 16px !important;
+  width: 16px !important; 
+  font-size: 8px;
+}
+.fa-solid{
+/* display:none ; */
+}
